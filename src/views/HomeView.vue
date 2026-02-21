@@ -7,7 +7,7 @@ console.log(posts)
 
 onMounted(async () => {
   try {
-    const response = await fetch('https://dummyjson.com/posts')
+    const response = await fetch('https://dummyjson.com/posts?limit=10')
     const data = await response.json()
     posts.value = data.posts.map((post) => ({
       id: post.id,
