@@ -1,7 +1,9 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
+  <nav>
+    <router-link to="/">Home</router-link> | <router-link to="${name: 'About'}">About</router-link>
+  </nav>
   <RouterView />
 </template>
 

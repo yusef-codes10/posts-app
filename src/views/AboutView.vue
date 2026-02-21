@@ -3,12 +3,14 @@
 </script>
 
 <template>
-  <div class="home">This is the home View</div>
+  <div class="about">
+    <h1>This is the abiut View</h1>
+  </div>
 </template>
 
 <style scoped>
-.home {
+.about {
   height: calc(100vh - 37px);
-  background-color: crimson;
+  background-color: aqua;
 }
 </style>
