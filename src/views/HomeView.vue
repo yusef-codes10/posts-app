@@ -6,7 +6,7 @@
 
 <style scoped>
 .home {
-  height: 100vh;
+  height: calc(100vh - 37px);
   background-color: crimson;
 }
 </style>
