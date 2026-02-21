@@ -9,11 +9,12 @@ onMounted(async () => {
   try {
     const response = await fetch('https://dummyjson.com/posts')
     const data = await response.json()
-    posts.value = data.map((post) => ({
+    posts.value = data.posts.map((post) => ({
       id: post.id,
       title: post.title,
       body: post.body,
     }))
+    console.log(posts.value)
   } catch (error) {
     console.log(error)
   }
