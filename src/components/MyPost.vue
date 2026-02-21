@@ -27,7 +27,7 @@ console.log(route.params.id)
 <template>
   <div class="post">
     <div class="title">
-      <RouterLink :to="{ name: PostDetails }">
+      <RouterLink :to="{ name: 'PostDetails', params: { id: id } }">
         <h1>{{ title }}</h1>
       </RouterLink>
     </div>
