@@ -20,7 +20,9 @@ defineProps({
 <template>
   <div class="post">
     <div class="title">
-      <h1>{{ title }}</h1>
+      <RouterLink>
+        <h1>{{ title }}</h1>
+      </RouterLink>
     </div>
     <div class="content">
       <p>{{ body }}</p>

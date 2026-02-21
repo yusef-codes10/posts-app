@@ -6,7 +6,7 @@
     |
     <RouterLink :to="{ name: 'About' }">About</RouterLink>
     |
-
+    <!-- ! Do not use the params here, even for testing it does not make any sense -->
     <!-- <RouterLink :to="{ name: 'PostDetails' }">Post Details</RouterLink> -->
   </nav>
   <RouterView />
