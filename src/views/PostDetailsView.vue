@@ -1,7 +1,17 @@
-<script setup></script>
+<script setup>
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+console.log(route.params.id)
+</script>
 
 <template>
-  <div class="post-details">Hey</div>
+  <div class="post-details">
+    Hey
+    <br />
+    This is your params {{ route.params.id }}
+  </div>
 </template>
 
 <style scoped>
