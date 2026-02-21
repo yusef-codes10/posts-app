@@ -1,7 +1,5 @@
 <script setup></script>
 
-<template>
-  <h1>You did it!</h1>
-</template>
+<template>This is the home View</template>
 
 <style scoped></style>
