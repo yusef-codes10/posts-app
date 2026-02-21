@@ -10,7 +10,11 @@ console.log(route.params.id)
   <div class="post-details">
     Hey
     <br />
-    This is your params {{ route.params.id }}
+    This is your params
+    <b>
+      {{ route.params.id }}
+    </b>
+    <!-- TODO: next we wanna aceess the component properties and send them as props  -->
   </div>
 </template>
 
