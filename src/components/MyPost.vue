@@ -20,7 +20,7 @@ defineProps({
 <template>
   <div class="post">
     <div class="title">
-      <RouterLink>
+      <RouterLink :to="{ name: PostDetails }">
         <h1>{{ title }}</h1>
       </RouterLink>
     </div>
