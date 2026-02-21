@@ -15,6 +15,9 @@ defineProps({
     required: true,
   },
 })
+
+// access the router params
+import { useRoute } from 'vue-router'
 </script>
 
 <template>

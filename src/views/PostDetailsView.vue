@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="post-details"></div>
+  <div class="post-details">Hey</div>
 </template>
 
 <style scoped>
