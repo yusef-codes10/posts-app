@@ -1,5 +1,6 @@
 <script setup>
 // fetch out data here
+import MyPost from '@/components/MyPost.vue'
 import { ref, onMounted } from 'vue'
 
 const posts = ref([])
@@ -22,7 +23,15 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="home">This is the home View</div>
+  <div class="home">
+    <MyPost
+      v-for="post in posts"
+      :key="post.id"
+      :id="post.id"
+      :title="post.title"
+      :body="post.body"
+    />
+  </div>
 </template>
 
 <style scoped>

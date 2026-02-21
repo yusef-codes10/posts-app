@@ -1,0 +1,40 @@
+<script setup>
+import { defineProps } from 'vue'
+
+defineProps({
+  id: {
+    type: Number,
+    required: true,
+  },
+  title: {
+    type: String,
+    required: true,
+  },
+  body: {
+    type: String,
+    required: true,
+  },
+})
+</script>
+
+<template>
+  <div class="post">
+    <div class="title">
+      <h1>{{ title }}</h1>
+    </div>
+    <div class="content">
+      <p>{{ body }}</p>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+h1 {
+  text-align: center;
+}
+
+.post {
+  border: 2px solid #000;
+  margin: 1rem;
+}
+</style>
