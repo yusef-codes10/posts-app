@@ -4,7 +4,7 @@ import { defineProps } from 'vue'
 defineProps({
   id: {
     type: Number,
-    required: true,
+    required: false,
   },
   title: {
     type: String,

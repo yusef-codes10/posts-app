@@ -8,7 +8,7 @@ console.log(posts)
 
 onMounted(async () => {
   try {
-    const response = await fetch('https://dummyjson.com/posts?limit=10')
+    const response = await fetch('https://dummyjson.com/posts')
     const data = await response.json()
     posts.value = data.posts.map((post) => ({
       id: post.id,
@@ -36,7 +36,7 @@ onMounted(async () => {
 
 <style scoped>
 .home {
-  height: calc(100vh - 37px);
+  min-height: calc(100vh - 37px);
   background-color: crimson;
 }
 </style>

@@ -1,5 +1,6 @@
 import AboutView from '@/views/AboutView.vue'
 import HomeView from '@/views/HomeView.vue'
+import PostDetailsView from '@/views/PostDetailsView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -12,6 +13,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: AboutView,
+  },
+  {
+    path: '/post/:id',
+    name: 'PostDetails',
+    component: PostDetailsView,
   },
 ]
 
