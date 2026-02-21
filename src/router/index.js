@@ -18,6 +18,7 @@ const routes = [
     path: '/:id',
     name: 'PostDetails',
     component: PostDetailsView,
+    props: true, // this is to recive the paramas as regular props
   },
 ]
 
