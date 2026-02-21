@@ -15,7 +15,7 @@ const routes = [
     component: AboutView,
   },
   {
-    path: '/post/:id',
+    path: '/:id',
     name: 'PostDetails',
     component: PostDetailsView,
   },

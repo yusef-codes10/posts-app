@@ -2,8 +2,12 @@
 
 <template>
   <nav>
-    <RouterLink to="/">Home</RouterLink> | <RouterLink :to="{ name: 'About' }">About</RouterLink> |
-    <RouterLink :to="{ name: 'PostDetails' }">Post Details</RouterLink>
+    <RouterLink to="/">Home</RouterLink>
+    |
+    <RouterLink :to="{ name: 'About' }">About</RouterLink>
+    |
+
+    <!-- <RouterLink :to="{ name: 'PostDetails' }">Post Details</RouterLink> -->
   </nav>
   <RouterView />
 </template>
