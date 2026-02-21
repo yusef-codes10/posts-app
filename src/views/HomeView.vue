@@ -1,5 +1,21 @@
 <script setup>
 // fetch out data here
+import { ref, onMounted } from 'vue'
+
+const posts = ref([])
+console.log(posts)
+
+onMounted(async () => {
+  try {
+    const response = await fetch('https://dummyjson.com/posts')
+    const data = await response.json()
+    posts.value = data.map((post) => {
+      ;((id = post.id), (title = post.title), (body = post.body))
+    })
+  } catch (error) {
+    console.log(error)
+  }
+})
 </script>
 
 <template>
