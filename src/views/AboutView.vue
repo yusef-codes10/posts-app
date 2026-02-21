@@ -4,7 +4,7 @@
 
 <template>
   <div class="about">
-    <h1>This is the abiut View</h1>
+    <h1>This is the about View</h1>
   </div>
 </template>
 
