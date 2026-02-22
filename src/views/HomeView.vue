@@ -3,9 +3,9 @@
 import MyPost from '@/components/MyPost.vue'
 import { ref, onMounted } from 'vue'
 
-import store from '@/stores/store.js'
+import { useStore } from '@/stores/store.js'
 
-const myStore = store()
+const myStore = useStore()
 
 const posts = ref([])
 console.log(posts)
