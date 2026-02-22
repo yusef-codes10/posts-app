@@ -20,7 +20,7 @@ onMounted(async () => {
 <template>
   <div class="home">
     <MyPost
-      v-for="post in posts"
+      v-for="post in myStore.posts"
       :key="post.id"
       :id="post.id"
       :title="post.title"
