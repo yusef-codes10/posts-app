@@ -1,6 +1,7 @@
 <script setup>
 import { useRoute } from 'vue-router'
 
+// we are using the useRoute() instead of as props, gonna skip as props for now
 const route = useRoute()
 
 console.log(route.params.id)
