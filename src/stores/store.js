@@ -7,7 +7,7 @@ export const useStore = defineStore('store', () => {
   const posts = ref([])
 
   //   * actions
-  ;async () => {
+  const fetchPosts = async () => {
     try {
       const response = await fetch('https://dummyjson.com/posts')
       const data = await response.json()
@@ -24,5 +24,9 @@ export const useStore = defineStore('store', () => {
     }
   }
 
-  return { posts }
+  return {
+    posts,
+
+    fetchPosts,
+  }
 })

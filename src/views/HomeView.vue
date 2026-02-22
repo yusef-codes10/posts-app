@@ -3,23 +3,16 @@
 import MyPost from '@/components/MyPost.vue'
 import { ref, onMounted } from 'vue'
 
+import store from '@/stores/store.js'
+
+const myStore = store()
+
 const posts = ref([])
 console.log(posts)
 
 onMounted(async () => {
-  try {
-    const response = await fetch('https://dummyjson.com/posts')
-    const data = await response.json()
-    posts.value = data.posts.map((post) => ({
-      id: post.id,
-      title: post.title,
-      body: post.body,
-      views: post.views,
-      userId: post.userId,
-    }))
-    console.log(posts.value)
-  } catch (error) {
-    console.log(error)
+  if (myStore.posts.length === 0) {
+    myStore.fetchPosts()
   }
 })
 </script>
