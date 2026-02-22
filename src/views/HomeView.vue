@@ -14,6 +14,8 @@ onMounted(async () => {
       id: post.id,
       title: post.title,
       body: post.body,
+      views: post.views,
+      userId: post.userId,
     }))
     console.log(posts.value)
   } catch (error) {
