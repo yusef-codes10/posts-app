@@ -12,9 +12,8 @@ console.log(posts)
 
 onMounted(async () => {
   //  TODO we have to try and fetch again but by id when needed
-  if (myStore.posts.length === 0) {
-    myStore.fetchPosts()
-  }
+
+  myStore.fetchPosts()
 })
 </script>
 
