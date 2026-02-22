@@ -10,7 +10,8 @@ import { useStore } from '@/stores/store.js'
 const myStore = useStore()
 
 // find the posts
-const currentPost = myStore.posts.find((post) => post.id === route.params.id)
+const id = Number(route.params.id)
+const currentPost = myStore.posts.find((post) => post.id === id)
 console.log(currentPost)
 </script>
 
@@ -23,7 +24,7 @@ console.log(currentPost)
       {{ route.params.id }}
     </b>
     <br />
-    and the post is {{}}
+    and the post is {{ currentPost.title }}
     <!-- TODO: next we wanna aceess the component properties and send them as props  -->
   </div>
 </template>
