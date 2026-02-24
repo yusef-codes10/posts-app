@@ -8,8 +8,8 @@ import { defineProps } from 'vue'
 // console.log(route.params.id)
 
 const { slug } = defineProps({
-  id: {
-    type: String,
+  slug: {
+    type: Number,
     required: true,
   },
 })
@@ -21,7 +21,7 @@ const myStore = useStore()
 // find the posts
 const id = Number(slug)
 const currentPost = myStore.posts.find((post) => post.id === id)
-console.log(currentPost)
+console.log(slug)
 </script>
 
 <template>
