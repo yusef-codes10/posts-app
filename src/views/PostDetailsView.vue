@@ -1,17 +1,25 @@
 <script setup>
-import { useRoute } from 'vue-router'
+// import { useRoute } from 'vue-router'
+import { defineProps } from 'vue'
 
 // we are using the useRoute() instead of as props, gonna skip as props for now
-const route = useRoute()
+// const route = useRoute()
 
-console.log(route.params.id)
+// console.log(route.params.id)
+
+const { slug } = defineProps({
+  id: {
+    type: String,
+    required: true,
+  },
+})
 
 import { useStore } from '@/stores/store.js'
 
 const myStore = useStore()
 
 // find the posts
-const id = Number(route.params.id)
+const id = Number(slug)
 const currentPost = myStore.posts.find((post) => post.id === id)
 console.log(currentPost)
 </script>
@@ -22,7 +30,7 @@ console.log(currentPost)
     <br />
     This is your params
     <b>
-      {{ route.params.id }}
+      {{ id }}
     </b>
     <br />
     and the post is {{ currentPost.title }}
