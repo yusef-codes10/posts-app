@@ -1,5 +1,6 @@
 import AboutView from '@/views/AboutView.vue'
 import HomeView from '@/views/HomeView.vue'
+import NotFound from '@/views/NotFound.vue'
 import PostDetailsView from '@/views/PostDetailsView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -29,7 +30,9 @@ const routes = [
   },
   // * catch-all 404
   {
-    path: '/:catchAll()',
+    path: '/:catchAll(.*)',
+    name: 'notFound',
+    component: NotFound,
   },
 ]
 
