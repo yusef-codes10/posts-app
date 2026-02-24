@@ -9,7 +9,7 @@ import { defineProps } from 'vue'
 
 const { slug } = defineProps({
   slug: {
-    type: Number,
+    type: String,
     required: true,
   },
 })
