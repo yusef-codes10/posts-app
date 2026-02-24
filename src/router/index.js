@@ -25,6 +25,7 @@ const routes = [
   // * re-direct
   {
     path: '/posts', // this is the old path to change to home
+    redirect: '/',
   },
 ]
 
