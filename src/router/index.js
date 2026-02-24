@@ -15,10 +15,10 @@ const routes = [
     component: AboutView,
   },
   {
-    path: '/:id',
+    path: '/:slug',
     name: 'PostDetails',
     component: PostDetailsView,
-    // props: true,
+    props: true,
     // this is to recive the paramas as regular props
     // 0 dependency on vue router. It just receives a prop like any other component would. You could even render it manually in tests by passing id directly without any routing involved.
   },
