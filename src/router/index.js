@@ -27,6 +27,10 @@ const routes = [
     path: '/posts', // this is the old path to change to home
     redirect: '/',
   },
+  // * catch-all 404
+  {
+    path: '/:catchAll()',
+  },
 ]
 
 const router = createRouter({

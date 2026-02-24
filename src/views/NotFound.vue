@@ -1,5 +1,6 @@
 <script setup></script>
 <template>
-  <div></div>
+  <h1>404</h1>
+  <h2>Page Not Found</h2>
 </template>
 <style lang=""></style>
